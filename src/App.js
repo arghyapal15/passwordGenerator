@@ -36,8 +36,8 @@ function App() {
 
   return (
     <>
-      <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
-        <h1 className="text-white text-center my-3">password Generator</h1>
+      <div className="w-full max-w-md mx-auto text-center shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
+        <h1 className="text-white text-center my-3 text-3xl font-bold">Password Generator</h1>
         <div className="flex shadow rounded-lg overflow-hidden mb-4">
         <input
             type="text"
@@ -58,7 +58,7 @@ function App() {
         <input 
         type="range"
         min={6}
-        max={100}
+        max={50}
         value={length}
               className='cursor-pointer'
               onChange={(e) => {setLength(e.target.value)}}
@@ -84,9 +84,8 @@ function App() {
           <label htmlFor="characterInput">Characters</label>
       </div>
     </div>
-
       </div>
-    
+
     </>
   );
 }
